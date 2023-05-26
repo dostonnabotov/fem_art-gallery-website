@@ -5,9 +5,148 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Poppins:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/main.js" defer></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <header class="header grid">
+      <div class="header-decoration">
+        <div></div>
+        <img src="/images/old-woman-gallery-mobile.jpg" alt="" />
+      </div>
+      <div class="header-inner container grid">
+        <div>
+          <h1 class="header-title main-title">
+            Modern <br />
+            Art Gallery
+          </h1>
+        </div>
+        <div class="header-inner__content flow-content" data-spacing="lg">
+          <p data-max-width="sm">
+            The arts in the collection of the Modern Art Gallery all started
+            from a spark of inspiration. Will these pieces inspire you? Visit us
+            and find out.
+          </p>
+          <a class="button has-icon" href="#">
+            <span>Our location</span>
+            <i class="fa-solid fa-chevron-right icon"></i>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="container flow-content">
+          <div class="grid" data-cols="2">
+            <div class="img-wrapper">
+              <img src="/images/bright-art-museum-desktop.jpg" alt="" />
+            </div>
+            <div class="flow-content order-first">
+              <h2 class="section-title">Your day at the gallery</h2>
+              <p data-max-width="sm">
+                Wander through our distinct collections and find new insights
+                about our artists. Dive into the details of their creative
+                process.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid grid--home">
+            <div class="img-wrapper">
+              <img src="/images/single-art-gallery-desktop.jpg" alt="" />
+            </div>
+            <div class="img-wrapper">
+              <img src="/images/people-at-museum-desktop.jpg" alt="" />
+            </div>
+            <div class="card bg-text-dark flow-content" data-spacing="lg">
+              <h2 class="section-title">Come & be inspired</h2>
+              <p>
+                We’re excited to welcome you to our gallery and see how our
+                collections influence you,
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer bg-text-dark">
+      <div class="container flow-content" data-spacing="lg">
+        <div class="footer-inner">
+          <div>
+            <p class="brand-logo">
+              Modern <br />
+              Art Gallery
+            </p>
+          </div>
+          <div class="text-sm">
+            <p>
+              The Modern Art Gallery is free to all visitors and open seven days
+              a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.
+            </p>
+          </div>
+          <ul role="list" class="flex-group" data-spacing="md:lg">
+            <li>
+              <a class="footer-link" href="">
+                <span class="sr-only">Facebook</span>
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="">
+                <span class="sr-only">Instagram</span>
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="">
+                <span class="sr-only">Twitter</span>
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <hr />
+
+        <p class="text-center text-sm">
+          Built by
+          <a
+            class="footer-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Doston
+          </a>
+          | Inspired by
+          <a
+            class="footer-link"
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Frontend Mentor
+          </a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
