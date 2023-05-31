@@ -25,63 +25,44 @@
     <script type="module" src="/main.js" defer></script>
   </head>
   <body>
-    <header class="header | grid">
-      <div class="header-background">
-        <div></div>
-        <img src="/images/old-woman-gallery-mobile.jpg" alt="" />
-      </div>
-      <div class="header-inner | container grid">
-        <div class="header-inner__headline">
-          <h1 class="header-title | text-4xl">
-            Modern <br />
-            Art Gallery
-          </h1>
+    <header>
+      <div class="map">
+        <div class="map__location">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.059013587282!2d-71.3129352234246!3d41.48132029016268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e5af5d9ad9f351%3A0x9bf38f9aed123934!2s99%20King%20St%2C%20Newport%2C%20RI%2002840%2C%20USA!5e0!3m2!1sen!2slv!4v1685529058499!5m2!1sen!2slv"
+            style="width: 100%; height: 100%; border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-        <div class="header-inner__content | flow-content" data-spacing="lg">
-          <p data-max-width="md">
-            The arts in the collection of the Modern Art Gallery all started
-            from a spark of inspiration. Will these pieces inspire you? Visit us
-            and find out.
-          </p>
-          <a class="button has-icon" href="/location.html">
+        <div class="map__content container">
+          <a class="button has-icon" href="/index.html">
+            <i class="fa-solid fa-chevron-left icon"></i>
             <span>Our location</span>
-            <i class="fa-solid fa-chevron-right icon"></i>
           </a>
         </div>
       </div>
     </header>
 
     <main>
-      <section>
-        <div class="container flow-content">
-          <div class="grid" data-cols="2">
-            <div class="img-wrapper">
-              <img src="/images/bright-art-museum-desktop.jpg" alt="" />
+      <section class="bg-text-dark" data-region="md">
+        <div class="container">
+          <div class="grid" data-cols="2" data-spacing="lg">
+            <div>
+              <h1 class="text-3xl" data-max-width="xs">Our location</h1>
             </div>
-            <div class="flow-content order-first">
-              <h2 class="text-3xl" data-max-width="sm">
-                Your day at the gallery
-              </h2>
-              <p data-max-width="md">
-                Wander through our distinct collections and find new insights
-                about our artists. Dive into the details of their creative
-                process.
-              </p>
-            </div>
-          </div>
-
-          <div class="grid grid--home">
-            <div class="img-wrapper">
-              <img src="/images/single-art-gallery-desktop.jpg" alt="" />
-            </div>
-            <div class="img-wrapper">
-              <img src="/images/people-at-museum-desktop.jpg" alt="" />
-            </div>
-            <div class="card bg-text-dark flow-content" data-spacing="xl">
-              <h2 class="text-3xl">Come & be inspired</h2>
-              <p>
-                We’re excited to welcome you to our gallery and see how our
-                collections influence you,
+            <div class="flow-content">
+              <h2 class="text-xl text-primary">99 King Street</h2>
+              <address>
+                Newport <br />
+                RI 02840 <br />
+                United States of America
+              </address>
+              <p data-max-width="xl">
+                Our newly opened gallery is located near the Edward King House
+                on 99 King Street, the Modern Art Gallery is free to all
+                visitors and open seven days a week from 8am to 9pm
               </p>
             </div>
           </div>
@@ -89,7 +70,7 @@
       </section>
     </main>
 
-    <footer class="footer | bg-text-dark">
+    <footer class="footer | bg-text-primary">
       <div class="container flow-content" data-spacing="lg">
         <div class="footer-inner">
           <div>
