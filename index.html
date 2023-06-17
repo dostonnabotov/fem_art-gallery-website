@@ -4,7 +4,35 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Art Gallery Website</title>
+    <meta name="author" content="Doston Nabotov" />
+    <meta
+      name="description"
+      content="Frontend Mentor | Art gallery website coding challenge solution by Doston"
+    />
+    <title>Art Gallery Website | Frontend Mentor</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/main.js" defer></script>
+
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -20,18 +48,27 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-
-    <link rel="stylesheet" href="/style.css" />
-    <script type="module" src="/main.js" defer></script>
   </head>
   <body>
     <header class="header">
       <div class="header-background">
         <div></div>
-        <img
-          src="/images/old-woman-gallery-mobile.jpg"
-          alt="An old woman portrait gallery"
-        />
+        <picture>
+          <source
+            media="(min-width: 640px)"
+            srcset="/images/old-woman-gallery-desktop.webp" 
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 640px)"
+            srcset="/images/old-woman-gallery-desktop.jpg" 
+            type="image/jpeg"
+          />
+          <img
+            src="/images/old-woman-gallery-mobile.jpg"
+            alt="An old woman portrait gallery"
+          />
+        </picture>
       </div>
       <div class="header-inner | container grid">
         <div class="header-inner__headline">
@@ -59,10 +96,22 @@
         <div class="container flow-content">
           <div class="grid" data-cols="2" data-spacing="md:lg">
             <div class="img-wrapper">
-              <img
-                src="/images/bright-art-museum-desktop.jpg"
-                alt="A bright and well-lit art museum"
-              />
+              <picture>
+                <source
+                  media="(min-width: 640px)"
+                  srcset="/images/bright-art-museum-desktop.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 640px)"
+                  srcset="/images/bright-art-museum-desktop.jpg"
+                  type="image/jpeg"
+                />
+                <img
+                  src="/images/bright-art-museum-mobile.jpg"
+                  alt="A bright and well-lit art museum"
+                />
+              </picture>
             </div>
             <div class="flow-content order-first">
               <h2 class="section-title">Your day at the gallery</h2>
@@ -76,16 +125,40 @@
 
           <div class="grid grid--home">
             <div class="img-wrapper">
-              <img
-                src="/images/single-art-gallery-desktop.jpg"
-                alt="An art gallery with chair in front of it"
-              />
+              <picture>
+                <source
+                  media="(min-width: 640px)"
+                  srcset="/images/single-art-gallery-desktop.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 640px)"
+                  srcset="/images/single-art-gallery-desktop.jpg"
+                  type="image/jpeg"
+                />
+                <img
+                  src="/images/single-art-gallery-mobile.jpg"
+                  alt="An art gallery with chair in front of it"
+                />
+              </picture>
             </div>
             <div class="img-wrapper">
-              <img
-                src="/images/people-at-museum-desktop.jpg"
-                alt="A museum filled with people"
-              />
+              <picture>
+                <source
+                  media="(min-width: 640px)"
+                  srcset="/images/people-at-museum-desktop.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 640px)"
+                  srcset="/images/people-at-museum-desktop.jpg"
+                  type="image/jpeg"
+                />
+                <img
+                  src="/images/people-at-museum-mobile.jpg"
+                  alt="A museum filled with people"
+                />
+              </picture>
             </div>
             <div class="card bg-text-dark flow-content">
               <h2 class="section-title">Come & be inspired</h2>
