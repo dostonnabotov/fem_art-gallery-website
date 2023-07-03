@@ -28,13 +28,13 @@ Users should be able to:
 
 ### Screenshot
 
-Coming soon...
 
-<!-- ![Desktop Preview](/public/screenshots/dekstop-preview.png)
 
-![Desktop Preview in 3D](/public/screenshots/desktop-preview-3d.png)
+![Desktop Preview](/public/screenshots/desktop-preview.png)
 
-![Mobile Preview in 3D](/public/screenshots/mobile-preview-3d.png) -->
+![Desktop Preview in 3D](/public/screenshots/desktop_homepage.png)
+
+![Mobile Preview in 3D](/public/screenshots/desktop_location.png)
 
 ### Links
 
