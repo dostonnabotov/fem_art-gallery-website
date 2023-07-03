@@ -30,11 +30,11 @@ Users should be able to:
 
 
 
-![Desktop Preview](/public/screenshots/desktop-preview.png)
+![Desktop Preview](./public/screenshots/desktop-preview.webp)
 
-![Desktop Preview in 3D](/public/screenshots/desktop_homepage.png)
+![Desktop Preview in 3D](./public/screenshots/desktop_homepage.webp)
 
-![Mobile Preview in 3D](/public/screenshots/desktop_location.png)
+![Mobile Preview in 3D](./public/screenshots/desktop_location.webp)
 
 ### Links
 
